@@ -1,0 +1,93 @@
+body, html, *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+#canvas1 {
+    position: absolute;
+    width: 1400px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    background: skyblue;
+}
+
+#playerImage {
+    display: none;
+}
+
+.background {
+    display: none;
+}
+
+#curtain-down {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: top 1s ease-in-out;
+}
+
+#top-curtain {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: top 1s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    background-color: skyblue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#resetButton {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    background-color: skyblue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#resetButton:hover {
+    background-color: rgb(231, 225, 211);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#startButton:hover {
+    background-color: rgb(231, 225, 211);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
