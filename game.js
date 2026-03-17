@@ -2,6 +2,7 @@ const startBtn = document.getElementById("startButton");
 const topCurtain = document.getElementById("top-curtain");
 const curtain = document.getElementById("curtain-down");
 const resetBtn = document.getElementById("resetButton");
+const instructions = document.getElementById("instructions");
 
 resetBtn.addEventListener("click", () => {
   window.location.reload();
@@ -16,6 +17,7 @@ startBtn.addEventListener("click", () => {
   curtain.style.top = "-110%";
   topCurtain.style.top = "-110%";
   startBtn.style.display = "none";
+  instructions.style.display = "none";
 
   class InputHandler {
     constructor() {

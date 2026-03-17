@@ -2,6 +2,7 @@ body, html, *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -51,11 +52,11 @@ body {
 
 #startButton {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px 40px;
-    font-size: 24px;
+    font-size: 40px;
     letter-spacing: 1px;
     background-color: skyblue;
     border-radius: 10px;
@@ -90,4 +91,32 @@ body {
 #startButton:hover {
     background-color: rgb(231, 225, 211);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#instructions {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 18px;
+    width: 1400px;
+    color: white;
+    text-align: center;
+    z-index: 4;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: end;
+}
+
+li img {
+    height: 400px;
+}
+
+h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
